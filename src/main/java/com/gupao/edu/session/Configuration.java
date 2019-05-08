@@ -32,4 +32,13 @@ public class Configuration {
     public boolean hasStatement(String statementName) {
         return mappedStatements.containsKey(statementName);
     }
+
+    /**
+     * 根据statementId获取sql
+     * @param statement
+     * @return
+     */
+    public String getMappedStatement(String statement) {
+        return mappedStatements.get(statement);
+    }
 }
